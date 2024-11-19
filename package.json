@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "exe": "tsx src/main.ts"
   },
   "devDependencies": {
     "@types/fluent-ffmpeg": "^2.1.27",

@@ -16,7 +16,7 @@ async function createVideo(videoInfo: ytdl.videoInfo) {
       // console.log(total);
     });
     videoStream.on('end', () => {
-      console.log("END");
+      console.log("Video downloaded successfully.");
       resolve();
     });
     videoStream.on('error', (err: Error) => {
@@ -34,7 +34,7 @@ async function createAudio(videoInfo: ytdl.videoInfo) {
       // console.log(total);
     });
     audioStream.on('end', () => {
-      console.log("END");
+      console.log("Audio downloaded successfully");
       resolve();
     });
     audioStream.on('error', (err: Error) => {
